@@ -1,25 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Name from './components/Name';
+import Number from './components/Number';
+
+const style = {
+  margin: '50px auto',
+  maxWidth:600
+};
 
 class App extends Component {
+  // Render
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="make-text-centered">
+        <div style={style} className="box make-elevated">
+          <Name />
+          <Number />
+        </div>
       </div>
     );
   }
